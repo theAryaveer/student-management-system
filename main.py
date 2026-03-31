@@ -1,37 +1,3 @@
-# =============================================================
-#        STUDENT MANAGEMENT SYSTEM
-#   Language      : Python 3
-#   Database      : MySQL
-#   Concepts      : OOP, CRUD, Login System, Role-Based Access
-# =============================================================
-#
-#  HOW TO RUN
-#  ----------
-#  1. Install connector  :  pip install mysql-connector-python
-#  2. Set your MySQL password in config.py -> DB_PASSWORD
-#  3. Run                :  python main.py
-#
-#  DEFAULT LOGINS
-#  --------------
-#  Admin   ->  username: admin      password: admin123
-#  Teacher ->  username: teacher1   password: teach123
-#  Student ->  Login with Student_ID + Name (case-insensitive)
-#
-#  PROJECT STRUCTURE
-#  -----------------
-#  config.py            - Database configuration
-#  db.py                - Database connection & setup (with hashed passwords)
-#  utils.py             - Helpers: banner, clear, masked_input, safe_str
-#  login.py             - Login module (admin/teacher/student)
-#  student_module.py    - Student CRUD operations
-#  attendance_module.py - Attendance marking & reports
-#  marks_module.py      - Marks entry & result display
-#  search_module.py     - Search & filter with LIKE escaping
-#  user_module.py       - User management (admin only)
-#  student_portal.py    - Student self-service portal
-#  menus.py             - Admin & Teacher dashboard menus
-#  main.py              - Entry point (this file)
-# =============================================================
 
 from db import setup_database
 from login import LoginModule
